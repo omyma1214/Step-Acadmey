@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learn English Online</title>
+  <title>Step Academy - Learn English Online</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,8 +17,12 @@
     header {
       background-color: #0055a5;
       color: white;
-      padding: 20px 40px;
+      padding: 20px;
       text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
     }
 
     nav a {
@@ -25,6 +30,10 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .hero {
@@ -41,6 +50,22 @@
     .hero p {
       font-size: 1.2em;
       color: #555;
+    }
+
+    .hero a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .hero a.button:hover {
+      background-color: #0056b3;
     }
 
     .lessons {
@@ -62,6 +87,48 @@
 
     .card h3 {
       color: #0055a5;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #444;
+    }
+
+    .apply-now {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .apply-now a {
+      background-color: #0055a5;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .apply-now a:hover {
+      background-color: #003c75;
+    }
+
+    .social-icons {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #0055a5;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff8800;
     }
 
     footer {
@@ -69,29 +136,39 @@
       color: white;
       text-align: center;
       padding: 15px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .lessons {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-  <h1>Learn English Online</h1>
-  <nav>
-    <a href="index.html">Main Page</a>
-    <a href="home.html">Home</a>
-    <a href="lessons.html">Lessons</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
+    <h1>Learn English Online</h1>
+    <nav>
+      <a href="admissions.html">Admission</a>
+      <a href="index.html">Main Page</a>
+      <a href="home.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <section class="hero">
     <h1>STEP ACADEMY</h1>
     <p>Free lessons, grammar tips, vocabulary exercises and more.</p>
+    <a class="button" href="lessons.html">Start Learning</a>
   </section>
+
+  <div class="apply-now">
+    <a href="admissions.html">Apply Now</a>
+  </div>
 
   <section class="lessons">
     <div class="card">
@@ -107,6 +184,13 @@
       <p>Practice speaking and listening with real-world examples.</p>
     </div>
   </section>
+
+  <div class="social-icons">
+    <a href="https://www.youtube.com/channel/UChC6U6M3ivpuWG3rl8X4I7A" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://wa.me/923704512669" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
 
   <footer>
     <p>&copy; 2025 Learn English Online. All rights reserved.</p>
